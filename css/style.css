@@ -1,0 +1,344 @@
+.main {
+  margin: 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+
+  margin-bottom: 10px;
+}
+.header h1 {
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+}
+.bell-container {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bell {
+  font-size: 25px;
+  position: relative;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 7px;
+  height: 7px;
+  background-color: red;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.search {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fafafa;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(31, 92, 57, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(12, 59, 42, 0.1);
+}
+
+.icon-search {
+  position: absolute;
+  left: 1rem;
+
+  fill: #b8b8b8;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Delivery Card */
+.card-delivery {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #307a59;
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+
+  box-shadow: 0px 15px 0px -6px rgba(186, 211, 200, 0.8);
+  position: relative;
+}
+
+/* Delivery Information */
+.delivery-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 25px;
+}
+
+.delivery-info h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.delivery-info p {
+  font-size: 14px;
+  color: #5c967c;
+  margin: 0;
+}
+
+/* Distance Badge */
+.delivery-distance {
+  background-color: white;
+  color: #2e7d32;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  width: 35px;
+}
+
+.arrow {
+  position: absolute;
+  right: 30px;
+  top: 10%;
+
+  font-size: 30px;
+  color: white;
+}
+
+.re-menu {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ebf2ef;
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+  color: black;
+}
+.re-menu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 30px;
+}
+
+.re-menu-info h2 {
+  margin: 0;
+}
+
+.re-menu-info p {
+  margin: 0;
+  font-weight: 100;
+}
+
+.re-menu-distance {
+  background-color: #307a59;
+  margin-top: 15px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+}
+.re-menu-distance a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.menu {
+  padding: 20px 0px;
+}
+
+.product-cart-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  min-width: 140px;
+  scroll-snap-align: center;
+}
+.menu h3 {
+  font-size: 23px;
+  margin: 0;
+}
+
+.product-image {
+  width: 100%;
+  height: 170px;
+  border-radius: 8px;
+}
+
+/* Container for product details */
+.product-details {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.product-name {
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price {
+  color: green;
+  font-weight: 400;
+  text-align: start;
+}
+
+.product-cart-container::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.product-cart-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded scrollbar thumb */
+}
+
+.product-cart-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+/* Nav Footer*/
+
+.button-container {
+  display: flex;
+  background-color: #f7fafc;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: auto;
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gray;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 24px;
+  margin-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.button p {
+  margin: 0;
+}
+
+.button.active a,
+.button a:hover {
+  color: #307a59;
+}
+
+.menu-title {
+  margin-bottom: 20px;
+}
+
+.menu-title p {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
+  color: #9e9ea7;
+}
+
+.menu-title h3 {
+  color: #307a59;
+  font-size: 30px;
+  margin: 0;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
