@@ -13,6 +13,13 @@
   box-sizing: border-box;
   padding: 20px 30px;
   margin-top: 20px;
+  position: relative;
+}
+
+.arrow{
+  position: absolute;
+  top: 35px;
+
 }
 
 .login-form {
